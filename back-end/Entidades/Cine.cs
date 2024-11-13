@@ -1,4 +1,4 @@
-﻿using PeliculasAPI.Validaciones;
+﻿using NetTopologySuite.Geometries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace PeliculasAPI.Entidades
 {
-    public class Genero
+    public class Cine
     {
         public int Id { get; set; }
-
-        [Required(ErrorMessage = "El campo {0} es requerido")]
-        [StringLength(maximumLength: 50)]
-        [PrimeraLetraMayuscula]
+        [Required]
+        [StringLength(maximumLength: 75)]
         public string Nombre { get; set; }
+        public Point Ubicacion { get; set; }
 
-        public List<PeliculasGeneros> PeliculasGeneros { get; set; }
+        public List<PeliculasCines> PeliculasCines { get; set; }
+
     }
 }
