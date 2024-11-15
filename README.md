@@ -1,1 +1,13 @@
 # back-end
+- Controladores con GET | POST | PUT | DELETE
+- DTO (Transformacion de Data)
+- AutoMapper
+- Logger : Filtros de Excepcion (Global)
+- Singleton | Transient | Scope
+- Migraciones Entitity SQL (Database-Update)
+- Utilidades
+- Almacenar Archivos en Local
+- Almacenar Archivos en Azure
+- Validacion Personalizada
+- CORS
+- Autenticacion JWT
