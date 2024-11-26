@@ -89,8 +89,8 @@ namespace PeliculasAPI.Controllers
             return new RespuestaAutenticacion()
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
-                Expiracion = expiracion,
-            }
+                Expiracion = expiracion
+            };
         }
         
     }

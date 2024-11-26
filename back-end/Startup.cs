@@ -14,6 +14,7 @@ using NetTopologySuite.Geometries;
 using PeliculasAPI.Filtros;
 using PeliculasAPI.Utilidades;
 using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 namespace PeliculasAPI
@@ -22,6 +23,7 @@ namespace PeliculasAPI
     {
         public Startup(IConfiguration configuration)
         {
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             Configuration = configuration;
         }
 
